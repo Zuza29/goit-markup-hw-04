@@ -137,7 +137,6 @@ padding-top: 0;
 }
 
 .main-page-top {
-  background-color: var(--black);
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -147,6 +146,10 @@ padding-top: 0;
   letter-spacing: 0.06em;
   padding-top: 200px;
   padding-bottom: 200px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url(/images/bgimg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-page-top button {

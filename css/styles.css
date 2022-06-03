@@ -6,6 +6,12 @@
   --blue: #2196f3;
 }
 
+svg {
+  height: 50px; 
+  width: 50px;
+  display: flex;
+}
+
 body {
   color: var(--text-black);
   font-family: "Roboto", "sans-serif";
@@ -133,10 +139,17 @@ img {
   margin-left: 93px;
 }
 
+
 /* Main */
  
 .section-1 {
 padding-top: 0;
+background-image: linear-gradient(
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+  url(/images/bgimg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-page-top {
@@ -149,10 +162,7 @@ padding-top: 0;
   letter-spacing: 0.06em;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url(/images/bgimg.jpg);
-  background-size: cover;
-  background-position: center;
+
 }
 
 .main-page-top button {
@@ -197,7 +207,8 @@ border-radius: 4px;;
 
 .icon-list {
   display: flex;
-  padding: 0; 
+  padding: 0;
+  padding-top: 94px;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -272,9 +283,31 @@ border-radius: 4px;;
 }
 
 .team-social li {
-    padding: 0;
-  margin: 0;
+padding: 0;
+margin: 0;
+fill: #AFB1B8;
 }
+
+.team-social li:hover {
+fill: #fff;
+}
+
+.ellipse {
+  display: flex;
+  z-index: 0;
+}
+
+.social-ellipse {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: var(--blue);
+}
+
+.main-page-mid-2-list .social-ellipse {
+  margin-left: 0;
+}
+
 
 .client-list {
   display: flex;

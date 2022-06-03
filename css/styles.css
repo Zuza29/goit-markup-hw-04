@@ -19,6 +19,9 @@ ol {
 h2 {
   text-align: center;
   padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
 }
 
 img {
@@ -184,6 +187,24 @@ padding-top: 0;
 .main-page-mid-1-list li:not(:last-of-type) {
   margin-right: 100px;
 }
+.rectangle {
+width: 270px;
+height: 120px;
+border-radius: 4px;;
+  background-color: var(--grey);
+  margin: 0;
+}
+
+.icon-list {
+  display: flex;
+  padding: 0; 
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-list li:not(:last-child) {
+  margin-right: 30px;
+}
 
 .main-page-mid-1-list {
   display: flex;
@@ -244,22 +265,51 @@ padding-top: 0;
   font-weight: 500;
 }
 
-.main-page-mid-1 h2,
-.main-page-mid-2 h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.6;
+.team-social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.team-social li {
+    padding: 0;
+  margin: 0;
+}
+
+.client-list {
+  display: flex;
+  padding: 0; 
+  justify-content: center;
+}
+
+.rectangle-2 {
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+.client-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Footer */
 
-.footer {
-  padding-left: 215px;
+.footer > .container {
+  display: flex;
+  margin: 0;
+  align-items: start;
 }
 
-.footer,
-.footer address {
+.footer {
   background-color: var(--black);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+    padding-left: 215px;
+}
+
+.footer address {
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -274,7 +324,31 @@ padding-top: 0;
 .container-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
 }
+
+.container-footer-social {
+    margin-left: 70px;
+    display: flex;
+    padding-top: 72px;
+    width: 206px;
+}
+
+.container-footer-social h3 {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff; 
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 
 /* Buttons */
 

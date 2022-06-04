@@ -4,12 +4,7 @@
   --text-grey: #757575;
   --text-black: #212121;
   --blue: #2196f3;
-}
-
-svg {
-  height: 50px; 
-  width: 50px;
-  display: flex;
+  --social-grey: #AFB1B8;
 }
 
 body {
@@ -123,6 +118,8 @@ img {
    margin-left: auto;
     margin-right: 12px;
     display: flex;
+     flex-wrap: wrap;
+  align-items: center;
 }
 
 .menu-2 a {
@@ -132,13 +129,36 @@ img {
 
 .menu-item {
   margin-right: 46px;
+  display: flex;
+  align-items: center;
 }
 
-.menu a[href="index.html"]
-{
+.menu a[href="index.html"] {
   margin-left: 93px;
 }
 
+.menu-2-item:hover svg,
+.menu-2-item:focus svg,
+.menu-2-item:active svg {
+  fill: var(--blue);
+}
+
+.header-icon-1 {
+  height: 12px;
+  width: 16px;
+}
+
+.header-icon-2 {
+width: 10px;
+height: 16px;
+
+}
+
+.header-icon-1,
+.header-icon-2 {
+  margin-right: 10px;
+  fill: var(--text-grey);
+}
 
 /* Main */
  
@@ -147,7 +167,7 @@ padding-top: 0;
 background-image: linear-gradient(
 rgba(47, 48, 58, 0.4),
 rgba(47, 48, 58, 0.4)),
-  url(/images/bgimg.jpg);
+  url(../images/bgimg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -197,12 +217,21 @@ rgba(47, 48, 58, 0.4)),
 .main-page-mid-1-list li:not(:last-of-type) {
   margin-right: 100px;
 }
-.rectangle {
+
+.rectangle-list {
 width: 270px;
 height: 120px;
 border-radius: 4px;;
   background-color: var(--grey);
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+.rli-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .icon-list {
@@ -278,36 +307,50 @@ border-radius: 4px;;
 
 .team-social {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   margin-top: 16px;
+  margin-left: 44px;
 }
 
 .team-social li {
 padding: 0;
 margin: 0;
 fill: #AFB1B8;
-}
-
-.team-social li:hover {
-fill: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 
 .ellipse {
-  display: flex;
-  z-index: 0;
-}
-
-.social-ellipse {
+display: flex;
 width: 44px;
 height: 44px;
 border-radius: 50%;
+background-color: transparent;
+justify-content: center;
+align-items: center;
+}
+
+.ellipse:hover {
 background-color: var(--blue);
 }
 
-.main-page-mid-2-list .social-ellipse {
-  margin-left: 0;
+.ellipse:hover svg {
+  fill: #fff;
 }
 
+.social-icon {
+  width: 20px;
+  height: 20px;
+fill: var(--social-grey);    
+} 
+
+.social-icon:hover {
+    fill: #fff;
+}
+
+.main-page-mid-2-list .ellipse {
+  margin-left: 0;
+}
 
 .client-list {
   display: flex;
@@ -315,15 +358,30 @@ background-color: var(--blue);
   justify-content: center;
 }
 
+.rectangle-2:hover,
+.rectangle-2:hover svg {
+  fill: var(--blue);
+  border-color:  var(--blue);;
+}
+
 .rectangle-2 {
 width: 170px;
 height: 92px;
-border: 1px solid #AFB1B8;
+border: 1px solid var(--social-grey);
 border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .client-list li:not(:last-child) {
   margin-right: 30px;
+}
+
+.client-list-logo {
+  width: 106px;
+  height: 60.04px;
+  fill: var(--social-grey);
 }
 
 /* Footer */
@@ -361,27 +419,54 @@ border-radius: 4px;
 }
 
 .container-footer-social {
-    margin-left: 70px;
-    display: flex;
-    padding-top: 72px;
-    width: 206px;
+display: flex;
+  flex-wrap: wrap;
+  max-width: 206px;
 }
 
-.container-footer-social h3 {
+.footer h3 {
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #fff; 
+color: #fff;
+  margin-left: 70px;
+    display: block;
+    padding-top: 72px;
+    margin-bottom: 20px;
 }
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap;
-
+  align-items: center;
+  margin-left: 55px;
 }
 
+.footer-social-link {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.footer-social-icon {
+    width: 20px;
+  height: 20px;
+  fill: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-link:hover {
+  background-color: var(--blue);
+}
 
 /* Buttons */
 

@@ -42,6 +42,7 @@ img {
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section {

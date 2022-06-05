@@ -235,6 +235,7 @@ img {
 .main-page-mid-1-images {
   display: flex;
   padding-left: 0;
+  justify-content: space-between;
 }
 
 .main-page-mid-1-images li:not(last-of-type) {
@@ -274,6 +275,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   display: block;
+    margin-bottom: 10px;
+
 }
 
 .main-page-mid-2 {
@@ -282,20 +285,17 @@ img {
   line-height: 1.5;
   letter-spacing: 0.03em;
   padding-top: 0;
+
 }
 
 .main-page-mid-2-list {
   display: flex;
   padding-left: 0;
-  margin-left: -30px;
+justify-content: space-between;
 }
 
 .main-page-mid-2 h2 {
   padding-top: 94px;
-}
-
-.main-page-mid-2-list li {
-  margin-left: 30px;
 }
 
 .main-page-mid-2-list figure {
@@ -410,7 +410,6 @@ img {
   color: #fff;
   font-size: 16px;
   line-height: 1.5;
-  padding-left: 215px;
 }
 
 .footer address {
